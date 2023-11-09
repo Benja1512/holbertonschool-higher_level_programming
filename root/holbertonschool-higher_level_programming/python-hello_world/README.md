@@ -1,1 +1,1 @@
-/*this is python project*/
+# this is python project 
