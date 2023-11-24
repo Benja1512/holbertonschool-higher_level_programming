@@ -1,1 +1,1 @@
-/* these are python exceptions ----- */
+# these are python exceptions #
