@@ -4,10 +4,8 @@
 class Square:
 
     """Initialize data"""
-    
-    def __init__(self, size):
+     def __init__(self, size):
 
    """Private instantiation of size"""
-   
-   self.__size = size
+    self.__size = size
     
