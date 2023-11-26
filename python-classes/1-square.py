@@ -3,14 +3,8 @@
 
 
 class Square():
-
+    """Class representating a square"""
     
-     def __init__(self, size):
-
-   """Private  the class
-
-
-   Args:
-       size (int): size of the square"""
+    def __init__(self, size):
     self.__size = size
     
