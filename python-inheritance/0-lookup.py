@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """
-Attriute lookup
+Attribute lookup
 """
 
+
 def lookup(obj):
-    """Lookup all atributes in Class
+    """Lookup all attributes in Class
 
     Args:
         obj: object class
