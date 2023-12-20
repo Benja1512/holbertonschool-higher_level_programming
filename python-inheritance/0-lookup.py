@@ -2,8 +2,10 @@
 """
 Attriute lookup
 """
+
 def lookup(obj):
     """Lookup all atributes in Class
+
     Args:
         obj: object class
     Returns:
