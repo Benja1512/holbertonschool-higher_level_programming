@@ -1,13 +1,19 @@
 #!/usr/bin/python3
-"""class main inherited"""
+"""
+Square module
+"""
+Rectangle = __import__('9-rectangle').Rectangle
 
-Rectangle = __import('9-rectangle.py').Rectangle
 
 class Square(Rectangle):
-    """class implemented"""
+    """class inherits from Rectangle"""
 
-def __init__(self, size):
-    """"method implemented"""    
-    self.integer_validator('size', size)
-    self.__size = size
-    super().__init__(self.__size, self.__size)
+    def __init__(self, size):
+        """initialization method"""
+        self.integer_validator('size', size)
+        self.__size = size
+        super().__init__(self.__size, self.__size)
+
+    def __str__(self):
+        """print method"""
+        return "[{}] {}/{}".format(__class__.__name__, self.__size, self.__size)
