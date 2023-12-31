@@ -1,18 +1,6 @@
 #!/usr/bin/python3
-import dis
-import marshal
-
-def list_names():
-    with open('hidden_4.pyc', 'rb') as file:
-        code = marshal.load(file)
-
-    instructions = dis.get_instructions(code)
-
-    names = [instruction.argval for instruction in instructions
-             if instruction.opname == 'LOAD_GLOBAL' and not instruction.argval.startswith('__')]
-
-    for name in sorted(set(names)):
-        print(name)
-
-if __name__ == '__main__':
-    list_names()
+if __name__ == "__main__":
+    import hidden_4
+    for i in dir(hidden_4):
+        if i[0:2] != '__':
+            print(i)
